@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementação IPV4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000000;
+            color: #b8b8b8;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #464e55;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Implementação IPV4</h1>
+
+    <div class="container">
+        <form class="form-horizontal" id="ipForm">
+            <div class="form-group row">
+                <label for="ip" class="col-sm-3 col-form-label">Endereço IP:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="ip" name="ip">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="mascara" class="col-sm-3 col-form-label">Máscara de Rede:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="mascara" name="mascara">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 text-center">
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                </div>
+            </div>
+        </form>
+
+        <h2>Resultados:</h2>
+        <div id="resultados"></div>
+
+        <h2>Histórico:</h2>
+        <ul id="historico"></ul>
+    </div>
+
+    <p>Grupo: Sthéfany e Vitória</p>
+
+    <script src="main.js"></script>
+</body>
+</html>
